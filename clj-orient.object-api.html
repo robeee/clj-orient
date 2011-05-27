@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <title>clj-orient.object - clj-orient nil API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <!-- TODO: are we using these (from clojure.org)? If so, add the files -->
+    <script src="file/view/code_highlighter.js" type="text/javascript"></script>
+    <script src="file/view/clojure.js" type="text/javascript"></script>
+    <style>.menuWrapper{height: 36px;}</style>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
+    <![endif]-->
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">clj-orient</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">clj-orient</span> <span id="version"></span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    <span class="toc-header">Namespaces</span>
+    <ul id="left-sidebar-list">
+      <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li>
+    </ul>
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0">Overview</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.object/open-object-db!">open-object-db!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.object/register-entity-class">register-entity-class</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.object/register-entity-classes">register-entity-classes</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.object/save-only-dirty">save-only-dirty</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.object/save-only-dirty?">save-only-dirty?</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.object/set-dirty">set-dirty</a>
+    </div>
+    <br />
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.object</span>
+  - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)
+  </h1>
+
+<br />Usage:
+<pre>
+(ns your-namespace
+  (:require <span id="long-name">clj-orient.object</span>))
+</pre><pre>
+</pre><h2>Overview</h2>
+<pre id="namespace-docstr">This namespace wraps the ObjectDB part of OrientDB.</pre>
+
+
+<br />
+<h2>Public Variables and Functions</h2>
+<div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.object/open-object-db!">open-object-db!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (open-object-db! db-loc username password)
+</pre>
+  <pre id="var-docstr">Opens a new ODatabaseObjectTx and binds it to the *db* var. It then returns the ODatabaseObjectTx.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L7" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.object/register-entity-class">register-entity-class</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (register-entity-class class)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L12" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.object/register-entity-classes">register-entity-classes</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (register-entity-classes package)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L15" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.object/save-only-dirty">save-only-dirty</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (save-only-dirty ?)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L18" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.object/save-only-dirty?">save-only-dirty?</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (save-only-dirty?)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L19" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.object/set-dirty">set-dirty</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (set-dirty pojo)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L20" id="var-source">Source</a>
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">Copyright 2011 Eduardo Julian</div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>
