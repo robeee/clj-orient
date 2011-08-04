@@ -68,7 +68,7 @@ namespace.
                 <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.query</span>
   - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)
   </h1>
-<span id="author-line">by <span id="author-name">Eduardo Julián</span><br /></span>
+<span id="author-line">by <span id="author-name">Eduardo Julian &lt;eduardoejp@gmail.com&gt;</span><br /></span>
 <br />Usage:
 <pre>
 (ns your-namespace
@@ -90,7 +90,7 @@ namespace.
   <pre id="var-docstr">Defines a new SQL function and installs it on the SQL engine.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/query.clj#L79" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L110" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -98,34 +98,51 @@ namespace.
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (native-query kclass filter-fn)
 </pre>
-  <pre id="var-docstr">Executes a native query that filters results by the class of the documents (as a keyword) and a filtering function.</pre>
+  <pre id="var-docstr">Executes a native query that filters results by the class of the documents (as a keyword) and a filtering function.
+
+When provided a filtering function, you will have to make your own query using the available Java methods
+for the OQueryContextNativeSchema instance you will be given.
+
+When provided a hash-map, matching will be done like this:
+{:field1 val1
+ :field2 [&lt;command&gt; val2]}
+e.g.
+{:country "USA",
+ :age [:$&gt;= 20]
+ :last-name [:$not= "Smith"]}
+
+Available commands:
+:$=, :$not=, :$&lt;, :$&lt;=, :$&gt;, :$&gt;=, :$like, :$matches
+
+When not provided a command, it works like :$= (equal).</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/query.clj#L46" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L45" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.query/run-sql-command!">run-sql-command!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (run-sql-command! db comm)
+  <pre id="var-usage">Usage: (run-sql-command! comm)
 </pre>
   <pre id="var-docstr">Runs the given SQL command.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/query.clj#L76" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L107" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.query/sql-query">sql-query</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (sql-query qry args limit)
-       (sql-query qry extra)
-       (sql-query qry)
+  <pre id="var-usage">Usage: (sql-query qry args paginate?)
+       (sql-query qry args)
 </pre>
-  <pre id="var-docstr">Runs the given SQL query with the given parameters (as a Clojure hash-map) and with the given limit.</pre>
+  <pre id="var-docstr">Runs the given SQL query with the given parameters (as a Clojure vector or hash-map) and with the given limit.
+When using positional parameters (?), use a vector.
+When using named parameter (:named), use a hash-map.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/query.clj#L67" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L92" id="var-source">Source</a>
 </div>
 
 

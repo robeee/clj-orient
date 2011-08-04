@@ -57,6 +57,8 @@ namespace.
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/add-hook!">add-hook!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/base-classes!">base-classes!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/browse-class">browse-class</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/browse-cluster">browse-cluster</a>
@@ -70,6 +72,8 @@ namespace.
       <a href="#clj-orient.core/create-class!">create-class!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/create-db!">create-db!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/create-prop!">create-prop!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/db-closed?">db-closed?</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
@@ -93,15 +97,11 @@ namespace.
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/document?">document?</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/drop-class!">drop-class!</a>
+      <a href="#clj-orient.core/drop-prop!">drop-prop!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/exists-class?">exists-class?</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/get-class">get-class</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/get-class-name">get-class-name</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/get-classes">get-classes</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/get-cluster-id">get-cluster-id</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
@@ -115,23 +115,41 @@ namespace.
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/get-id">get-id</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/id-&gt;vec">id-&gt;vec</a>
+      <a href="#clj-orient.core/get-props">get-props</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/id?">id?</a>
+      <a href="#clj-orient.core/get-schema">get-schema</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/id-&gt;vec">id-&gt;vec</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/load-item">load-item</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/merge!">merge!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/oclass">oclass</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/oclass?">oclass?</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/oclasses">oclasses</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/open-document-db!">open-document-db!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/oprop-&gt;map">oprop-&gt;map</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/orid?">orid?</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/passoc!">passoc!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/pget">pget</a>
+      <a href="#clj-orient.core/pcontains?">pcontains?</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/props">props</a>
+      <a href="#clj-orient.core/pdissoc!">pdissoc!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/pget">pget</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/remove-hook!">remove-hook!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/save!">save!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.core/schema-info">schema-info</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/set-db!">set-db!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
@@ -141,7 +159,7 @@ namespace.
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/truncate-class!">truncate-class!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.core/update!">update!</a>
+      <a href="#clj-orient.core/update-oprop!">update-oprop!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.core/vec-&gt;id">vec-&gt;id</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
@@ -156,7 +174,7 @@ namespace.
                 <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.core</span>
   - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)
   </h1>
-<span id="author-line">by <span id="author-name">Eduardo Julián</span><br /></span>
+<span id="author-line">by <span id="author-name">Eduardo Julian &lt;eduardoejp@gmail.com&gt;</span><br /></span>
 <br />Usage:
 <pre>
 (ns your-namespace
@@ -177,7 +195,7 @@ namespace.
   <pre id="var-docstr">This dynamic var holds the current open DB.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L35" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -188,7 +206,18 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L201" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L341" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/base-classes!">base-classes!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (base-classes! kclass)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L288" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -196,10 +225,10 @@ namespace.
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (browse-class kclass)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Returns a seq of all the documents of the specified class.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L65" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L72" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -207,21 +236,22 @@ namespace.
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (browse-cluster kcluster)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Returns a seq of all the documents in the specified cluster.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L66" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L74" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/close-db!">close-db!</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (close-db!)
+       (close-db! db)
 </pre>
   <pre id="var-docstr">Closes the DB at *db* and sets *db* to nil.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L50" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L55" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -232,7 +262,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L68" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L77" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -243,19 +273,20 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L69" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L79" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/create-class!">create-class!</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (create-class! kclass)
-       (create-class! kclass ksuperclass)
+       (create-class! kclass ksuperclass-or-schema)
+       (create-class! kclass ksuperclass schema)
 </pre>
   <pre id="var-docstr">Creates a class in the given database and makes it inherit the given superclass. Superclass can be of type String, Class or OClass.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L162" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L291" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -267,51 +298,70 @@ namespace.
   <pre id="var-docstr">Creates a new database either locally or remotely. It does not, however, return the open instance or bind *db*.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L37" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L42" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/create-prop!">create-prop!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (create-prop! oclass pname ptype)
+       (create-prop! oclass pname ptype conf)
+</pre>
+  <pre id="var-docstr">When providing a type, it must be of the class OType.
+When using linked types #{EMBEDDED, LINK}, provide a vector of [link-type type]
+
+When providing a configuration hash-map, it must be in the format specified for update-oprop!.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L239" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/db-closed?">db-closed?</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (db-closed?)
+       (db-closed? db)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L76" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L87" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/db-exists?">db-exists?</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (db-exists?)
+       (db-exists? db)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L78" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L93" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/db-info">db-info</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (db-info)
+       (db-info db)
 </pre>
   <pre id="var-docstr">Returns information relevant to the DB as a hash-map.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L80" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L97" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/db-open?">db-open?</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (db-open?)
+       (db-open? db)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L77" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L90" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -330,12 +380,12 @@ namespace.
   (after-delete [~document] ~@forms)
 Example:
 (defhook log-hook
-  (after-create document (println "Created:" (doc-&gt;map document))))
+  (after-create [document] (println "Created:" (doc-&gt;map document))))
 
 defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L203" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L344" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -343,10 +393,11 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (delete! x)
 </pre>
-  <pre id="var-docstr">Deletes an ODocument if it is passed or if its ID (as ORID or vector) is passed.</pre>
+  <pre id="var-docstr">Deletes an ODocument if it is passed or if its id (as ORID or vector) is passed.
+Can also remove a class from the DB Schema.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L140" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L186" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -358,18 +409,18 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Deletes the database bound to *db* and sets *db* to nil.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L56" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L60" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/derive!">derive!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (derive! subclass superclass)
+  <pre id="var-usage">Usage: (derive! ksubclass ksuperclass)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Derives a class from another in the schema.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L155" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L281" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -380,7 +431,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Given an ODocument, returns a hash-map of its keys and values.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L130" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L175" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -389,10 +440,11 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-usage">Usage: (document kclass)
        (document kclass properties)
 </pre>
-  <pre id="var-docstr">Returns a newly created document given the document's class (as a keyword). It can optionally take a clojure hash-map to set the document's properties.</pre>
+  <pre id="var-docstr">Returns a newly created document given the document's class (as a keyword).
+It can optionally take a Clojure hash-map to set the document's properties.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L91" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L116" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -403,18 +455,18 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L99" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L112" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.core/drop-class!">drop-class!</h2>
+  <h2 id="clj-orient.core/drop-prop!">drop-prop!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (drop-class! kclass)
+  <pre id="var-usage">Usage: (drop-prop! kclass kname)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Removes a property from an OClass.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L171" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L252" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -425,18 +477,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L175" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clj-orient.core/get-class">get-class</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (get-class kclass)
-</pre>
-  <pre id="var-docstr">Returns an OClass given the classname as a keyword.</pre>
-  
-  
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L149" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L310" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -444,21 +485,10 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (get-class-name odoc)
 </pre>
-  <pre id="var-docstr">Get the classname from an OClass or an ODocument.</pre>
+  <pre id="var-docstr">Returns the classname from an OClass or an ODocument.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L151" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clj-orient.core/get-classes">get-classes</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (get-classes)
-</pre>
-  <pre id="var-docstr"></pre>
-  
-  
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L153" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L275" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -469,7 +499,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L73" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L84" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -480,7 +510,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L72" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L83" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -491,7 +521,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L71" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L82" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -502,7 +532,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L74" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L85" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -513,7 +543,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L200" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L340" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -524,7 +554,29 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Returns the ORecordId for the given document or graph element.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L114" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L132" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/get-props">get-props</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (get-props item)
+</pre>
+  <pre id="var-docstr">Returns a seq of the properties from either an ODocument (as keywords) or an OClass (as OProperty instances).</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L141" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/get-schema">get-schema</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (get-schema)
+</pre>
+  <pre id="var-docstr">Returns *db*'s OSchema</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L261" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -535,18 +587,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Given an ORID, returns a vector [cluster-id, cluster-position].</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L117" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clj-orient.core/id?">id?</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (id? x)
-</pre>
-  <pre id="var-docstr"></pre>
-  
-  
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L100" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L135" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -554,10 +595,55 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (load-item orid)
 </pre>
+  <pre id="var-docstr">Returns an ODocument, given it's id (either as ORID or a vector)</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L183" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/merge!">merge!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (merge! doc1 doc2)
+</pre>
+  <pre id="var-docstr">Same a 'merge', but for document properties.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L171" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/oclass">oclass</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (oclass kclass)
+</pre>
+  <pre id="var-docstr">Returns an OClass given the classname as a keyword.
+If given an OClass, returns it inmediately.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L267" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/oclass?">oclass?</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (oclass? x)
+</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L138" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L114" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/oclasses">oclasses</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (oclasses)
+</pre>
+  <pre id="var-docstr">Returns a seq of all the OClass objects in the schema.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L278" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -565,21 +651,67 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (open-document-db! db-loc user pass)
 </pre>
-  <pre id="var-docstr">Opens a new ODatabaseDocumentTx and binds it to the *db* var. It then returns the ODatabaseDocumentTx.</pre>
+  <pre id="var-docstr">Opens and returns a new ODatabaseDocumentTx.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L47" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L52" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/oprop-&gt;map">oprop-&gt;map</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (oprop-&gt;map oprop)
+</pre>
+  <pre id="var-docstr">Returns a map with all the relevant information from an OProperty object.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L208" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/orid?">orid?</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (orid? x)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L113" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/passoc!">passoc!</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (passoc! document key val)
+       (passoc! document key val &amp; kvs)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Same a 'assoc', but for document properties.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L128" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L155" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/pcontains?">pcontains?</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (pcontains? document key)
+</pre>
+  <pre id="var-docstr">Same a 'contains?', but for document properties.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L166" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/pdissoc!">pdissoc!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (pdissoc! document key)
+       (pdissoc! document key &amp; keys)
+</pre>
+  <pre id="var-docstr">Same a 'dissoc', but for document properties.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L162" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -587,21 +719,10 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (pget document key)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Same a 'get', but for document properties.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L126" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clj-orient.core/props">props</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (props document)
-</pre>
-  <pre id="var-docstr">Returns a list of the properties as keywords.</pre>
-  
-  
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L123" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L148" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -612,19 +733,30 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L202" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L342" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/save!">save!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (save! document)
+  <pre id="var-usage">Usage: (save! item)
        (save! document kcluster)
 </pre>
-  <pre id="var-docstr">Saves an ODocument or an object.</pre>
+  <pre id="var-docstr">Saves an ODocument, an OClass or an object.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L102" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L125" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.core/schema-info">schema-info</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (schema-info)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L325" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -635,29 +767,29 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Sets *db*'s root binding to the given DB.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L44" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L49" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/subclass?">subclass?</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (subclass? subclass superclass)
+  <pre id="var-usage">Usage: (subclass? ksubclass ksuperclass)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L184" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L319" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.core/superclass?">superclass?</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (superclass? superclass subclass)
+  <pre id="var-usage">Usage: (superclass? ksuperclass ksubclass)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L179" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L313" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -668,18 +800,23 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L186" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L322" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.core/update!">update!</h2>
+  <h2 id="clj-orient.core/update-oprop!">update-oprop!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (update! document hmap)
+  <pre id="var-usage">Usage: (update-oprop! oprop {:keys [name type regexp min max mandatory? nullable? index]})
 </pre>
-  <pre id="var-docstr">Updates an ODocument based on the given hash-map.</pre>
+  <pre id="var-docstr">Updates an OProperty object.
+
+Please note:
+  min &amp; max must be strings.
+  type must be of the OType class.
+  index must be one of the following keywords: :dictionary, :fulltext, :unique, :not-unique, :proxy</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L108" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L217" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -690,7 +827,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Given a vector [cluster-id, cluster-position], returns an ORecordId.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L120" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L138" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -701,7 +838,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Evaluates the given forms in an environment where *db* is bound to the given database.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L60" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L64" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -712,7 +849,7 @@ defhook only creates the hook. To add it to the current *db* use add-hook.</pre>
   <pre id="var-docstr">Runs the following forms inside a transaction.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/core.clj#L84" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/core.clj#L103" id="var-source">Source</a>
 </div>
 
 

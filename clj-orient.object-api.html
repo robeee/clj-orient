@@ -55,9 +55,9 @@ namespace.
     <div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.object/open-object-db!">open-object-db!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.object/register-entity-classesª">register-entity-classesª</a>
+      <a href="#clj-orient.object/register-entity-class!">register-entity-class!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.object/register-entity-classª">register-entity-classª</a>
+      <a href="#clj-orient.object/register-entity-classes!">register-entity-classes!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.object/save-only-dirty!">save-only-dirty!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
@@ -72,7 +72,7 @@ namespace.
                 <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.object</span>
   - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)
   </h1>
-<span id="author-line">by <span id="author-name">Eduardo Julián</span><br /></span>
+<span id="author-line">by <span id="author-name">Eduardo Julian &lt;eduardoejp@gmail.com&gt;</span><br /></span>
 <br />Usage:
 <pre>
 (ns your-namespace
@@ -91,32 +91,32 @@ namespace.
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (open-object-db! db-loc user pass)
 </pre>
-  <pre id="var-docstr">Opens a new ODatabaseObjectTx and binds it to the *db* var. It then returns the ODatabaseObjectTx.</pre>
+  <pre id="var-docstr">Opens and returns a new ODatabaseObjectTx.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L19" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/object.clj#L19" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.object/register-entity-classesª">register-entity-classesª</h2>
+  <h2 id="clj-orient.object/register-entity-class!">register-entity-class!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (register-entity-classesª package)
+  <pre id="var-usage">Usage: (register-entity-class! class)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L25" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/object.clj#L22" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.object/register-entity-classª">register-entity-classª</h2>
+  <h2 id="clj-orient.object/register-entity-classes!">register-entity-classes!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (register-entity-classª class)
+  <pre id="var-usage">Usage: (register-entity-classes! package)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L22" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/object.clj#L25" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -127,7 +127,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L28" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/object.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -138,7 +138,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L29" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/object.clj#L29" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -149,7 +149,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/61d96d4890adac046c7593cca1570148bbee0736/src/clj_orient/object.clj#L30" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/object.clj#L30" id="var-source">Source</a>
 </div>
 
 
