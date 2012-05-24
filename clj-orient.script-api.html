@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>clj-orient.object - clj-orient API documentation</title>
+    <title>clj-orient.script - clj-orient API documentation</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
@@ -51,24 +51,39 @@ namespace.
   <h1 class="nopad">Table of Contents</h1>
   <div style="margin-left: 1em;" class="toc-section">
     <a href="#toc0">Overview</a>
-    
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.script/run-script!">run-script!</a>
+    </div>
     <br />
   </div>
 </div>
 </div>
-                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.object</span>
+                <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.script</span>
   - <span id="header-project">clj-orient</span> <span id="header-version"></span>
   </h1>
 <span id="author-line">by <span id="author-name">Eduardo Julián &lt;eduardoejp@gmail.com&gt;</span><br /></span>
-<br />Full namespace name: <span id="long-name">clj-orient.object</span>
+<br />Full namespace name: <span id="long-name">clj-orient.script</span>
 <p></p>
 <h2>Overview</h2>
-<pre id="namespace-docstr">This namespace wraps the ObjectDB part of OrientDB.</pre>
+<pre id="namespace-docstr">OrientDB scripting.</pre>
 
 
 <br />
 <h2>Public Variables and Functions</h2>
-
+<div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.script/run-script!">run-script!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (run-script! type script)
+       (run-script! script)
+</pre>
+  <pre id="var-docstr">Executes the given script on the current *db.*
+If no type is provided, it defaults to "Javascript".</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/580dfcc97e07e6e60c5b31c370aaa568fb04accf/src/clj_orient/script.clj#L19" id="var-source">Source</a>
+</div>
 
 
 </div>

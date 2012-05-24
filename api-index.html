@@ -1,14 +1,11 @@
 <html>
   <head>
-    <title>Index - clj-orient nil API documentation</title>
+    <title>Index - clj-orient API documentation</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
     <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
     <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
-    <!-- TODO: are we using these (from clojure.org)? If so, add the files -->
-    <script src="file/view/code_highlighter.js" type="text/javascript"></script>
-    <script src="file/view/clojure.js" type="text/javascript"></script>
     <style>.menuWrapper{height: 36px;}</style>
     <!--[if lte IE 6]>
     <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
@@ -35,10 +32,12 @@ namespace.
       <li><a class="wiki_link" href="index.html">Overview</a></li>
       <li><a class="wiki_link" href="api-index.html">API Index</a></li>
     </ul>
-    <span class="toc-header">Namespaces</span>
-    <ul id="left-sidebar-list">
-      <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li>
-    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li><li><a href="clj-orient.schema-api.html" class="wiki_link">clj-orient.schema</a></li><li><a href="clj-orient.script-api.html" class="wiki_link">clj-orient.script</a></li>
+      </ul>
+    </div>
     
     <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
   </div>
@@ -49,7 +48,7 @@ namespace.
 	  <div class="contentBox"><div class="innerContentBox">
               <div id="content_view" class="wiki wikiPage">
                 <div id="right-sidebar"></div>
-                <div id="content-tag"><h1 id="overview">Index of Public Functions and Variables - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)</h1>
+                <div id="content-tag"><h1 id="overview">Index of Public Functions and Variables - <span id="header-project">clj-orient</span> <span id="header-version"></span></h1>
 This page has an alphabetical index of all the documented functions and variables
 in <span class="project-name-span">clj-orient</span>. 
 
@@ -80,32 +79,46 @@ Shortcuts:<br />
   <pre>
 <span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/add-hook!">add-hook!</a><span id="line-content">                    function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/add-root!">add-root!</a><span id="line-content">                    function      clj-orient.graph   Sets up a root node with the given name (as a keyw...
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="B"><span id="section-head">B</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/base-classes!">base-classes!</a><span id="line-content">                function      clj-orient.core    .
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/-&gt;bytes">-&gt;bytes</a><span id="line-content">                      function      clj-orient.core    Returns a byte array with the bytes from the OReco...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/browse-class">browse-class</a><span id="line-content">                 function      clj-orient.core    Returns a seq of all the documents of the specifie...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/browse-cluster">browse-cluster</a><span id="line-content">               function      clj-orient.core    Returns a seq of all the documents in the specifie...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/browse-edges">browse-edges</a><span id="line-content">                 function      clj-orient.graph   .
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/browse-elements">browse-elements</a><span id="line-content">              function      clj-orient.graph   .
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/browse-vertices">browse-vertices</a><span id="line-content">              function      clj-orient.graph   .
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="C"><span id="section-head">C</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/close-db!">close-db!</a><span id="line-content">                    function      clj-orient.core    Closes the DB at *db* and sets *db* to nil..
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/class-cluster-ids">class-cluster-ids</a><span id="line-content">            function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/class-indexes">class-indexes</a><span id="line-content">                function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/class-name">class-name</a><span id="line-content">                   function      clj-orient.core    Returns the classname (as a keyword) from an OClas...
+</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/clj-command!">clj-command!</a><span id="line-content">                 function      clj-orient.query   Runs a SQL command against the database written as...
+</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/clj-query">clj-query</a><span id="line-content">                    function      clj-orient.query   Does a SQL query against the database written as a...
+</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/clj-query*">clj-query*</a><span id="line-content">                   macro         clj-orient.query   Same as clj-query, but transforms the map into a S...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/close-db!">close-db!</a><span id="line-content">                    function      clj-orient.core    Closes the DB at *db* and sets *db* to nil..
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/cluster-id">cluster-id</a><span id="line-content">                   function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/cluster-name">cluster-name</a><span id="line-content">                 function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/cluster-names">cluster-names</a><span id="line-content">                function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/cluster-pos">cluster-pos</a><span id="line-content">                  function      clj-orient.core    Given an ORID, returns the Cluster Position.
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/cluster-type">cluster-type</a><span id="line-content">                 function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/count-class">count-class</a><span id="line-content">                  function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/count-cluster">count-cluster</a><span id="line-content">                function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/count-edges">count-edges</a><span id="line-content">                  function      clj-orient.graph   .
+</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/count-edges">count-edges</a><span id="line-content">                  function      clj-orient.graph   Counts either all the edges in the DB or the edges...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/count-elements">count-elements</a><span id="line-content">               function      clj-orient.graph   .
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/count-vertices">count-vertices</a><span id="line-content">               function      clj-orient.graph   .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/create-class!">create-class!</a><span id="line-content">                function      clj-orient.core    Creates a class in the given database and makes it...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/create-db!">create-db!</a><span id="line-content">                   function      clj-orient.core    Creates a new database either locally or remotely....
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/create-edge-type!">create-edge-type!</a><span id="line-content">            function      clj-orient.graph   .
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/create-prop!">create-prop!</a><span id="line-content">                 function      clj-orient.core    When providing a type, it must be of the class OTy...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/create-prop!">create-prop!</a><span id="line-content">                 function      clj-orient.core    When providing a type, it must be one of the follo...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/create-vertex-type!">create-vertex-type!</a><span id="line-content">          function      clj-orient.graph   .
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="D"><span id="section-head">D</span></h2>
   <pre>
@@ -115,164 +128,185 @@ Shortcuts:<br />
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/db-info">db-info</a><span id="line-content">                      function      clj-orient.core    Returns information relevant to the DB as a hash-m...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/db-open?">db-open?</a><span id="line-content">                     function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/defhook">defhook</a><span id="line-content">                      macro         clj-orient.core    Creates a new hook from the following fn definitio...
+</span></span><span id="section-content"> <a href="clj-orient.schema-api.html#clj-orient.schema/defoclass">defoclass</a><span id="line-content">                    macro         clj-orient.schema  Defines a class (and it's properties) in the datab...
 </span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/defsqlfn">defsqlfn</a><span id="line-content">                     macro         clj-orient.query   Defines a new SQL function and installs it on the ...
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/delete!">delete!</a><span id="line-content">                      function      clj-orient.core    Deletes an ODocument if it is passed or if its id ...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/delete!">delete!</a><span id="line-content">                      function      clj-orient.core    Deletes a document if it is passed or if its id (a...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/delete-db!">delete-db!</a><span id="line-content">                   function      clj-orient.core    Deletes the database bound to *db* and sets *db* t...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/delete-edge!">delete-edge!</a><span id="line-content">                 function      clj-orient.graph   .
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/delete-vertex!">delete-vertex!</a><span id="line-content">               function      clj-orient.graph   .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/derive!">derive!</a><span id="line-content">                      function      clj-orient.core    Derives a class from another in the schema..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/doc-&gt;map">doc-&gt;map</a><span id="line-content">                     function      clj-orient.core    Given an ODocument, returns a hash-map of its keys...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/document">document</a><span id="line-content">                     function      clj-orient.core    Returns a newly created document given the documen...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/document?">document?</a><span id="line-content">                    function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/drop-prop!">drop-prop!</a><span id="line-content">                   function      clj-orient.core    Removes a property from an OClass..
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="E"><span id="section-head">E</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/exists-class?">exists-class?</a><span id="line-content">                function      clj-orient.core    .
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/edge-base-class">edge-base-class</a><span id="line-content">              function      clj-orient.graph   .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/exists-class?">exists-class?</a><span id="line-content">                function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/exists-prop?">exists-prop?</a><span id="line-content">                 function      clj-orient.core    .
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="F"><span id="section-head">F</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="G"><span id="section-head">G</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-class-name">get-class-name</a><span id="line-content">               function      clj-orient.core    Returns the classname from an OClass or an ODocume...
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-cluster-id">get-cluster-id</a><span id="line-content">               function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-cluster-name">get-cluster-name</a><span id="line-content">             function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-cluster-names">get-cluster-names</a><span id="line-content">            function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-cluster-type">get-cluster-type</a><span id="line-content">             function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-edge-base-class">get-edge-base-class</a><span id="line-content">          function      clj-orient.graph   .
-</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-edges">get-edges</a><span id="line-content">                    function      clj-orient.graph   Gets the :in edges, the :out edges or :both edges ...
+<span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-edges">get-edges</a><span id="line-content">                    function      clj-orient.graph   Gets the :in edges, the :out edges or :both edges ...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-ends">get-ends</a><span id="line-content">                     function      clj-orient.graph   Gets the vertices at the end of the :in edges, the...
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-hooks">get-hooks</a><span id="line-content">                    function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-id">get-id</a><span id="line-content">                       function      clj-orient.core    Returns the ORecordId for the given document or gr...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-links">get-links</a><span id="line-content">                    function      clj-orient.graph   Returns the set of edges between 2 vertices..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-props">get-props</a><span id="line-content">                    function      clj-orient.core    Returns a seq of the properties from either an ODo...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-prop">get-prop</a><span id="line-content">                     function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-root">get-root</a><span id="line-content">                     function      clj-orient.graph   Returns the root node of the given name (as a keyw...
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/get-schema">get-schema</a><span id="line-content">                   function      clj-orient.core    Returns *db*'s OSchema.
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-vertex">get-vertex</a><span id="line-content">                   function      clj-orient.graph   Gets the :in or the :out vertex of an edge..
-</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/get-vertex-base-class">get-vertex-base-class</a><span id="line-content">        function      clj-orient.graph   .
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="H"><span id="section-head">H</span></h2>
   <pre>
-</pre>
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/hooks">hooks</a><span id="line-content">                        function      clj-orient.core    .
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="I"><span id="section-head">I</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/id-&gt;vec">id-&gt;vec</a><span id="line-content">                      function      clj-orient.core    Given an ORID, returns a vector [cluster-id, clust...
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/indexed?">indexed?</a><span id="line-content">                     function      clj-orient.core    Tests whether the given props are indexed for the ...
+</span></span><span id="section-content"> <a href="clj-orient.schema-api.html#clj-orient.schema/install-oclasses!">install-oclasses!</a><span id="line-content">            function      clj-orient.schema  Installs the OClasses previously defined by defocl...
+</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/install-sql-fns!">install-sql-fns!</a><span id="line-content">             function      clj-orient.query   Installs the previously defined SQL functions in t...
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="J"><span id="section-head">J</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="K"><span id="section-head">K</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="L"><span id="section-head">L</span></h2>
   <pre>
 <span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/link!">link!</a><span id="line-content">                        function      clj-orient.graph   Creates an edge between 2 vertices. An optional ed...
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/linked?">linked?</a><span id="line-content">                      function      clj-orient.graph   Returns whether 2 vertexes are linked..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/load-item">load-item</a><span id="line-content">                    function      clj-orient.core    Returns an ODocument, given it's id (either as ORI...
-</span></span></pre>
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/load">load</a><span id="line-content">                         function      clj-orient.core    Returns a document (wrapped by CljODoc), given it'...
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="M"><span id="section-head">M</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/merge!">merge!</a><span id="line-content">                       function      clj-orient.core    Same a 'merge', but for document properties..
-</span></span></pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="N"><span id="section-head">N</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/native-query">native-query</a><span id="line-content">                 function      clj-orient.query   Executes a native query that filters results by th...
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/-&gt;native-query">-&gt;native-query</a><span id="line-content">               function      clj-orient.query   Takes either a function or a hash-map and returns ...
+</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/native-query">native-query</a><span id="line-content">                 function      clj-orient.query   Executes a native query that filters results by th...
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="O"><span id="section-head">O</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/oclass">oclass</a><span id="line-content">                       function      clj-orient.core    Returns an OClass given the classname as a keyword...
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/-&gt;output-stream">-&gt;output-stream</a><span id="line-content">              function      clj-orient.core    Writes an ORecordBytes object to the given output ...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/oclass">oclass</a><span id="line-content">                       function      clj-orient.core    Returns an OClass given the classname as a keyword...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/oclass?">oclass?</a><span id="line-content">                      function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/oclasses">oclasses</a><span id="line-content">                     function      clj-orient.core    Returns a seq of all the OClass objects in the sch...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/open-document-db!">open-document-db!</a><span id="line-content">            function      clj-orient.core    Opens and returns a new ODatabaseDocumentTx..
 </span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/open-graph-db!">open-graph-db!</a><span id="line-content">               function      clj-orient.graph   Opens and returns a new OGraphDatabase..
-</span></span><span id="section-content"> <a href="clj-orient.object-api.html#clj-orient.object/open-object-db!">open-object-db!</a><span id="line-content">              function      clj-orient.object  Opens and returns a new ODatabaseObjectTx..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/oprop-&gt;map">oprop-&gt;map</a><span id="line-content">                   function      clj-orient.core    Returns a map with all the relevant information fr...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/orid">orid</a><span id="line-content">                         function      clj-orient.core    Transforms a vector into an ORecordId object..
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/orid-&gt;vec">orid-&gt;vec</a><span id="line-content">                    function      clj-orient.core    Given an ORID, returns a vector [cluster-id, clust...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/orid?">orid?</a><span id="line-content">                        function      clj-orient.core    .
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="P"><span id="section-head">P</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/passoc!">passoc!</a><span id="line-content">                      function      clj-orient.core    Same a 'assoc', but for document properties..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/pcontains?">pcontains?</a><span id="line-content">                   function      clj-orient.core    Same a 'contains?', but for document properties..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/pdissoc!">pdissoc!</a><span id="line-content">                     function      clj-orient.core    Same a 'dissoc', but for document properties..
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/pget">pget</a><span id="line-content">                         function      clj-orient.core    Same a 'get', but for document properties..
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/prop-info">prop-info</a><span id="line-content">                    function      clj-orient.core    Returns a hash-map with detailed information about...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/props">props</a><span id="line-content">                        function      clj-orient.core    .
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="Q"><span id="section-head">Q</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="R"><span id="section-head">R</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.object-api.html#clj-orient.object/register-entity-class!">register-entity-class!</a><span id="line-content">       function      clj-orient.object  .
-</span></span><span id="section-content"> <a href="clj-orient.object-api.html#clj-orient.object/register-entity-classes!">register-entity-classes!</a><span id="line-content">     function      clj-orient.object  .
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/record-bytes">record-bytes</a><span id="line-content">                 function      clj-orient.core    For creating ORecordBytes objects. The source can ...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/remove-hook!">remove-hook!</a><span id="line-content">                 function      clj-orient.core    .
-</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/run-sql-command!">run-sql-command!</a><span id="line-content">             function      clj-orient.query   Runs the given SQL command..
-</span></span></pre>
+</span></span><span id="section-content"> <a href="clj-orient.script-api.html#clj-orient.script/run-script!">run-script!</a><span id="line-content">                  function      clj-orient.script  Executes the given script on the current *db.* If ...
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="S"><span id="section-head">S</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/save!">save!</a><span id="line-content">                        function      clj-orient.core    Saves an ODocument, an OClass or an object..
-</span></span><span id="section-content"> <a href="clj-orient.object-api.html#clj-orient.object/save-only-dirty!">save-only-dirty!</a><span id="line-content">             function      clj-orient.object  .
-</span></span><span id="section-content"> <a href="clj-orient.object-api.html#clj-orient.object/save-only-dirty?">save-only-dirty?</a><span id="line-content">             function      clj-orient.object  .
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/save!">save!</a><span id="line-content">                        function      clj-orient.core    Saves a document, an OClass or an object (for the ...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/save-schema!">save-schema!</a><span id="line-content">                 function      clj-orient.core    .
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/schema">schema</a><span id="line-content">                       function      clj-orient.core    Returns *db*'s OSchema..
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/schema-info">schema-info</a><span id="line-content">                  function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/set-db!">set-db!</a><span id="line-content">                      function      clj-orient.core    Sets *db*'s root binding to the given DB..
-</span></span><span id="section-content"> <a href="clj-orient.object-api.html#clj-orient.object/set-dirty!">set-dirty!</a><span id="line-content">                   function      clj-orient.object  .
+</span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/sql-command!">sql-command!</a><span id="line-content">                 function      clj-orient.query   Runs the given SQL command..
 </span></span><span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/sql-query">sql-query</a><span id="line-content">                    function      clj-orient.query   Runs the given SQL query with the given parameters...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/sub-classes">sub-classes</a><span id="line-content">                  function      clj-orient.core    Returns a set of the names (as keywords) of subcla...
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/subclass?">subclass?</a><span id="line-content">                    function      clj-orient.core    .
 </span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/superclass?">superclass?</a><span id="line-content">                  function      clj-orient.core    .
-</span></span></pre>
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="T"><span id="section-head">T</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/truncate-class!">truncate-class!</a><span id="line-content">              function      clj-orient.core    .
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.query-api.html#clj-orient.query/traverse">traverse</a><span id="line-content">                     function      clj-orient.query   fields = vector of keywords. target = oclass keywo...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/truncate-class!">truncate-class!</a><span id="line-content">              function      clj-orient.core    .
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="U"><span id="section-head">U</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/unlink!">unlink!</a><span id="line-content">                      function      clj-orient.graph   Removes all the edges between 2 vertices.
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/update-oprop!">update-oprop!</a><span id="line-content">                function      clj-orient.core    Updates an OProperty object.  Please note: min &amp;...
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/undo!">undo!</a><span id="line-content">                        function      clj-orient.core    Undoes local changes to documents..
+</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/unlink!">unlink!</a><span id="line-content">                      function      clj-orient.graph   Removes all the edges between 2 vertices.
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/update-prop!">update-prop!</a><span id="line-content">                 function      clj-orient.core    Updates an OProperty object.  Please note: type ...
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="V"><span id="section-head">V</span></h2>
   <pre>
-<span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/vec-&gt;id">vec-&gt;id</a><span id="line-content">                      function      clj-orient.core    Given a vector [cluster-id, cluster-position], ret...
-</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/vertex">vertex</a><span id="line-content">                       function      clj-orient.graph   Creates a new vertex. Works just like 'document'..
-</span></span></pre>
+<span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/vertex">vertex</a><span id="line-content">                       function      clj-orient.graph   Creates a new vertex. Works just like 'document'..
+</span></span><span id="section-content"> <a href="clj-orient.graph-api.html#clj-orient.graph/vertex-base-class">vertex-base-class</a><span id="line-content">            function      clj-orient.graph   .
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="W"><span id="section-head">W</span></h2>
   <pre>
 <span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/with-db">with-db</a><span id="line-content">                      macro         clj-orient.core    Evaluates the given forms in an environment where ...
-</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/with-tx">with-tx</a><span id="line-content">                      macro         clj-orient.core    Runs the following forms inside a transaction..
-</span></span></pre>
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/with-tx">with-tx</a><span id="line-content">                      macro         clj-orient.core    Runs the following forms inside a transaction. If ...
+</span></span><span id="section-content"> <a href="clj-orient.core-api.html#clj-orient.core/wrap-odoc">wrap-odoc</a><span id="line-content">                    function      clj-orient.core    Wraps an ODocument object inside a CljODoc object..
+</span></span>
+  </pre>
 </div><div id="index-body">
   <h2 id="X"><span id="section-head">X</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="Y"><span id="section-head">Y</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="Z"><span id="section-head">Z</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div><div id="index-body">
   <h2 id="Other"><span id="section-head">Other</span></h2>
   <pre>
-</pre>
+
+  </pre>
 </div>
 <style type="text/css">
   #AllContentContainer {min-width: 96em;}
@@ -283,7 +317,7 @@ Shortcuts:<br />
           </div>
 	</div>
 	<div id="foot">
-	  <div style="text-align: center;" id="copyright">Copyright 2011 Eduardo Julian</div>
+	  <div style="text-align: center;" id="copyright">Copyright 2011~2012 Eduardo Julian</div>
 	</div>
       </div>
       <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />

@@ -1,14 +1,11 @@
 <html>
   <head>
-    <title>clj-orient.graph - clj-orient nil API documentation</title>
+    <title>clj-orient.graph - clj-orient API documentation</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
     <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
     <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
-    <!-- TODO: are we using these (from clojure.org)? If so, add the files -->
-    <script src="file/view/code_highlighter.js" type="text/javascript"></script>
-    <script src="file/view/clojure.js" type="text/javascript"></script>
     <style>.menuWrapper{height: 36px;}</style>
     <!--[if lte IE 6]>
     <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
@@ -35,10 +32,12 @@ namespace.
       <li><a class="wiki_link" href="index.html">Overview</a></li>
       <li><a class="wiki_link" href="api-index.html">API Index</a></li>
     </ul>
-    <span class="toc-header">Namespaces</span>
-    <ul id="left-sidebar-list">
-      <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li>
-    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li><li><a href="clj-orient.schema-api.html" class="wiki_link">clj-orient.schema</a></li><li><a href="clj-orient.script-api.html" class="wiki_link">clj-orient.script</a></li>
+      </ul>
+    </div>
     
     <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
   </div>
@@ -75,7 +74,7 @@ namespace.
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.graph/delete-vertex!">delete-vertex!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.graph/get-edge-base-class">get-edge-base-class</a>
+      <a href="#clj-orient.graph/edge-base-class">edge-base-class</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.graph/get-edges">get-edges</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
@@ -87,8 +86,6 @@ namespace.
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.graph/get-vertex">get-vertex</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.graph/get-vertex-base-class">get-vertex-base-class</a>
-    </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.graph/link!">link!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.graph/linked?">linked?</a>
@@ -98,21 +95,20 @@ namespace.
       <a href="#clj-orient.graph/unlink!">unlink!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.graph/vertex">vertex</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.graph/vertex-base-class">vertex-base-class</a>
     </div>
     <br />
   </div>
 </div>
 </div>
                 <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.graph</span>
-  - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)
+  - <span id="header-project">clj-orient</span> <span id="header-version"></span>
   </h1>
 <span id="author-line">by <span id="author-name">Eduardo Julian &lt;eduardoejp@gmail.com&gt;</span><br /></span>
-<br />Usage:
-<pre>
-(ns your-namespace
-  (:require <span id="long-name">clj-orient.graph</span>))
-</pre><pre>
-</pre><h2>Overview</h2>
+<br />Full namespace name: <span id="long-name">clj-orient.graph</span>
+<p></p>
+<h2>Overview</h2>
 <pre id="namespace-docstr">This namespace wraps the GraphDB part of OrientDB.</pre>
 
 
@@ -128,7 +124,7 @@ namespace.
   <pre id="var-docstr">Sets up a root node with the given name (as a keyword).</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L58" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L67" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -140,18 +136,19 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L28" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L31" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.graph/browse-elements">browse-elements</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (browse-elements kclass polymorphic?)
+  <pre id="var-usage">Usage: (browse-elements kclass)
+       (browse-elements kclass polymorphic?)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L31" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L34" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -163,18 +160,22 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L25" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L28" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.graph/count-edges">count-edges</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (count-edges)
+       (count-edges vertex)
+       (count-edges vertex dir)
+       (count-edges vertex dir kclass)
+       (count-edges vertex dir kclass props)
 </pre>
-  <pre id="var-docstr"></pre>
+  <pre id="var-docstr">Counts either all the edges in the DB or the edges of a vertex.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L34" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L39" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -185,7 +186,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L35" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L45" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -196,7 +197,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L33" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L38" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -208,7 +209,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L65" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L75" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -220,7 +221,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L40" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L50" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -231,7 +232,7 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L78" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L88" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -242,18 +243,18 @@ namespace.
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L52" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L62" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.graph/get-edge-base-class">get-edge-base-class</h2>
+  <h2 id="clj-orient.graph/edge-base-class">edge-base-class</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (get-edge-base-class)
+  <pre id="var-usage">Usage: (edge-base-class)
 </pre>
   <pre id="var-docstr"></pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L63" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L73" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -268,7 +269,7 @@ If provided properties to filter the edges, the properties can be a vector or a 
 or a hash-map (to filter edges with properties set to specified values).</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L100" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L117" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -281,7 +282,7 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Gets the vertices at the end of the :in edges, the :out edges or :both edges from a vertex.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L125" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L137" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -294,7 +295,7 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Returns the set of edges between 2 vertices.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L80" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L90" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -305,7 +306,7 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Returns the root node of the given name (as a keyword).</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L54" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L64" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -316,18 +317,7 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Gets the :in or the :out vertex of an edge.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L94" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clj-orient.graph/get-vertex-base-class">get-vertex-base-class</h2>
-  <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (get-vertex-base-class)
-</pre>
-  <pre id="var-docstr"></pre>
-  
-  
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L38" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L111" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -340,18 +330,20 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Creates an edge between 2 vertices. An optional edge-type (as a :keyword) or hash-map can be passed to set the type and properties.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L69" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L79" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.graph/linked?">linked?</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (linked? v1 v2)
+       (linked? v1 v2 labels)
+       (linked? v1 v2 labels edge-types)
 </pre>
   <pre id="var-docstr">Returns whether 2 vertexes are linked.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L88" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L99" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -362,18 +354,20 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Opens and returns a new OGraphDatabase.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L22" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L25" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.graph/unlink!">unlink!</h2>
   <span id="var-type">function</span><br />
   <pre id="var-usage">Usage: (unlink! v1 v2)
+       (unlink! v1 v2 labels)
+       (unlink! v1 v2 labels edge-types)
 </pre>
   <pre id="var-docstr">Removes all the edges between 2 vertices</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L91" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L106" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -386,7 +380,18 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
   <pre id="var-docstr">Creates a new vertex. Works just like 'document'.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/graph.clj#L44" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L54" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.graph/vertex-base-class">vertex-base-class</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (vertex-base-class)
+</pre>
+  <pre id="var-docstr"></pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/e1573a6885a64e94896ebabd1a4f41e12cbaa214/src/clj_orient/graph.clj#L48" id="var-source">Source</a>
 </div>
 
 
@@ -396,7 +401,7 @@ or a hash-map (to filter edges with properties set to specified values).</pre>
           </div>
 	</div>
 	<div id="foot">
-	  <div style="text-align: center;" id="copyright">Copyright 2011 Eduardo Julian</div>
+	  <div style="text-align: center;" id="copyright">Copyright 2011~2012 Eduardo Julian</div>
 	</div>
       </div>
       <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />

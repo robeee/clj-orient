@@ -1,14 +1,11 @@
 <html>
   <head>
-    <title>clj-orient.query - clj-orient nil API documentation</title>
+    <title>clj-orient.query - clj-orient API documentation</title>
     <link href="static/favicon.png" rel="icon" />
     <link href="static/favicon.png" rel="shortcut icon" />
     <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
     <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
     <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
-    <!-- TODO: are we using these (from clojure.org)? If so, add the files -->
-    <script src="file/view/code_highlighter.js" type="text/javascript"></script>
-    <script src="file/view/clojure.js" type="text/javascript"></script>
     <style>.menuWrapper{height: 36px;}</style>
     <!--[if lte IE 6]>
     <link rel="stylesheet" href="http://www.wikispaces.com/_/2009051601/s/internal_ie.css" type="text/css" />
@@ -35,10 +32,12 @@ namespace.
       <li><a class="wiki_link" href="index.html">Overview</a></li>
       <li><a class="wiki_link" href="api-index.html">API Index</a></li>
     </ul>
-    <span class="toc-header">Namespaces</span>
-    <ul id="left-sidebar-list">
-      <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li>
-    </ul>
+    <div class="NamespaceTOC">
+      <span class="toc-header">Namespaces</span>
+      <ul id="left-sidebar-list">
+        <li><a href="clj-orient.core-api.html" class="wiki_link">clj-orient.core</a></li><li><a href="clj-orient.graph-api.html" class="wiki_link">clj-orient.graph</a></li><li><a href="clj-orient.object-api.html" class="wiki_link">clj-orient.object</a></li><li><a href="clj-orient.query-api.html" class="wiki_link">clj-orient.query</a></li><li><a href="clj-orient.schema-api.html" class="wiki_link">clj-orient.schema</a></li><li><a href="clj-orient.script-api.html" class="wiki_link">clj-orient.script</a></li>
+      </ul>
+    </div>
     
     <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
   </div>
@@ -53,28 +52,37 @@ namespace.
   <div style="margin-left: 1em;" class="toc-section">
     <a href="#toc0">Overview</a>
     <div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.query/-&gt;native-query">-&gt;native-query</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.query/clj-command!">clj-command!</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.query/clj-query">clj-query</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.query/clj-query*">clj-query*</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.query/defsqlfn">defsqlfn</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.query/install-sql-fns!">install-sql-fns!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.query/native-query">native-query</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
-      <a href="#clj-orient.query/run-sql-command!">run-sql-command!</a>
+      <a href="#clj-orient.query/sql-command!">sql-command!</a>
     </div><div style="margin-left: 1em;" class="toc-entry">
       <a href="#clj-orient.query/sql-query">sql-query</a>
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a href="#clj-orient.query/traverse">traverse</a>
     </div>
     <br />
   </div>
 </div>
 </div>
                 <div id="content-tag"><h1 id="overview">API for <span id="namespace-name">clj-orient.query</span>
-  - <span id="header-project">clj-orient</span> <span id="header-version"></span> (<span id="header-status"></span>)
+  - <span id="header-project">clj-orient</span> <span id="header-version"></span>
   </h1>
 <span id="author-line">by <span id="author-name">Eduardo Julian &lt;eduardoejp@gmail.com&gt;</span><br /></span>
-<br />Usage:
-<pre>
-(ns your-namespace
-  (:require <span id="long-name">clj-orient.query</span>))
-</pre><pre>
-</pre><h2>Overview</h2>
+<br />Full namespace name: <span id="long-name">clj-orient.query</span>
+<p></p>
+<h2>Overview</h2>
 <pre id="namespace-docstr">This namespace wraps the querying functionality, both for native queries and SQL queries.</pre>
 
 
@@ -83,22 +91,11 @@ namespace.
 <div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.query/defsqlfn">defsqlfn</h2>
-  <span id="var-type">macro</span><br />
-  <pre id="var-usage">Usage: (defsqlfn sym args &amp; body)
-</pre>
-  <pre id="var-docstr">Defines a new SQL function and installs it on the SQL engine.</pre>
-  
-  
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L110" id="var-source">Source</a>
-</div><div id="var-entry">
-  <br />
-  <hr />
-  <h2 id="clj-orient.query/native-query">native-query</h2>
+  <h2 id="clj-orient.query/-&gt;native-query">-&gt;native-query</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (native-query kclass filter-fn)
+  <pre id="var-usage">Usage: (-&gt;native-query kclass fn-kvs)
 </pre>
-  <pre id="var-docstr">Executes a native query that filters results by the class of the documents (as a keyword) and a filtering function.
+  <pre id="var-docstr">Takes either a function or a hash-map and returns an ONativeSynchQuery object.
 
 When provided a filtering function, you will have to make your own query using the available Java methods
 for the OQueryContextNativeSchema instance you will be given.
@@ -106,43 +103,132 @@ for the OQueryContextNativeSchema instance you will be given.
 When provided a hash-map, matching will be done like this:
 {:field1 val1
  :field2 [&lt;command&gt; val2]}
+
 e.g.
 {:country "USA",
  :age [:$&gt;= 20]
  :last-name [:$not= "Smith"]}
 
-Available commands:
+Available operators:
 :$=, :$not=, :$&lt;, :$&lt;=, :$&gt;, :$&gt;=, :$like, :$matches
 
-When not provided a command, it works like :$= (equal).</pre>
+When not provided a command, it works like :$= (.eq).</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L45" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L53" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
-  <h2 id="clj-orient.query/run-sql-command!">run-sql-command!</h2>
+  <h2 id="clj-orient.query/clj-command!">clj-command!</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (run-sql-command! comm)
+  <pre id="var-usage">Usage: (clj-command! query-map args)
+</pre>
+  <pre id="var-docstr">Runs a SQL command against the database written as a Clojure map.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L367" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/clj-query">clj-query</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (clj-query query-map args)
+</pre>
+  <pre id="var-docstr">Does a SQL query against the database written as a Clojure map.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L361" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/clj-query*">clj-query*</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (clj-query* query-map args)
+</pre>
+  <pre id="var-docstr">Same as clj-query, but transforms the map into a SQL string at compile time.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L364" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/defsqlfn">defsqlfn</h2>
+  <span id="var-type">macro</span><br />
+  <pre id="var-usage">Usage: (defsqlfn sym args &amp; body)
+</pre>
+  <pre id="var-docstr">Defines a new SQL function and installs it on the SQL engine.
+Besides the arguments passed to the function, it will also receive the hidden params *document* and *request*,
+of types ODocument and OCommandRequest respectively.
+
+If the function does not access within it's body the hidden params *document* and *request*, a local (Clojure) version of the
+function will also be defined.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L152" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/install-sql-fns!">install-sql-fns!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (install-sql-fns!)
+</pre>
+  <pre id="var-docstr">Installs the previously defined SQL functions in the database.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L118" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/native-query">native-query</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (native-query klass query)
+</pre>
+  <pre id="var-docstr">Executes a native query that filters results by the class of the documents (as a keyword) and a filtering function.
+It takes either an ONativeSynchQuery object, a function or a hash-map.
+Returns results as a lazy-seq of CljODoc objects.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L82" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/sql-command!">sql-command!</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (sql-command! comm)
 </pre>
   <pre id="var-docstr">Runs the given SQL command.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L107" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L149" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
   <h2 id="clj-orient.query/sql-query">sql-query</h2>
   <span id="var-type">function</span><br />
-  <pre id="var-usage">Usage: (sql-query qry args paginate?)
-       (sql-query qry args)
+  <pre id="var-usage">Usage: (sql-query qry &amp; [args paginate?])
 </pre>
-  <pre id="var-docstr">Runs the given SQL query with the given parameters (as a Clojure vector or hash-map) and with the given limit.
+  <pre id="var-docstr">Runs the given SQL query with the given parameters (as a Clojure vector or hash-map) and the option to paginate results.
 When using positional parameters (?), use a vector.
-When using named parameter (:named), use a hash-map.</pre>
+When using named parameters (:named), use a hash-map.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/bfa3fff545651050dbb15b5b3643f861a91b8908/src/clj_orient/query.clj#L92" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L138" id="var-source">Source</a>
+</div><div id="var-entry">
+  <br />
+  <hr />
+  <h2 id="clj-orient.query/traverse">traverse</h2>
+  <span id="var-type">function</span><br />
+  <pre id="var-usage">Usage: (traverse fields target pred &amp; [limit])
+</pre>
+  <pre id="var-docstr">fields = vector of keywords.
+target = oclass keyword or ORID.
+pred = function that takes a CljODoc and a function that takes a keyword for accessing context variables.
+(optional) limit = an integer.
+
+Returns results as a lazy-seq of CljODoc objects.</pre>
+  
+  
+  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L99" id="var-source">Source</a>
 </div>
 
 
@@ -152,7 +238,7 @@ When using named parameter (:named), use a hash-map.</pre>
           </div>
 	</div>
 	<div id="foot">
-	  <div style="text-align: center;" id="copyright">Copyright 2011 Eduardo Julian</div>
+	  <div style="text-align: center;" id="copyright">Copyright 2011~2012 Eduardo Julian</div>
 	</div>
       </div>
       <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
