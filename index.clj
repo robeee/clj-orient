@@ -1,6 +1,6 @@
 {:namespaces
  ({:source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient/clj-orient.core-api.html",
    :name "clj-orient.core",
@@ -22,7 +22,7 @@
    :author "Eduardo Julián <eduardoejp@gmail.com>",
    :doc "This namespace wraps the ObjectDB part of OrientDB."}
   {:source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient/clj-orient.query-api.html",
    :name "clj-orient.query",
@@ -47,773 +47,773 @@
  ({:name "*db*",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L120",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L122",
    :dynamic true,
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/*db*",
    :doc "This dynamic var holds the current open DB.",
    :var-type "var",
-   :line 120,
+   :line 122,
    :file "src/clj_orient/core.clj"}
   {:arglists ([orb]),
    :name "->bytes",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L494",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L496",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/->bytes",
    :doc
    "Returns a byte array with the bytes from the ORecordBytes object.",
    :var-type "function",
-   :line 494,
+   :line 496,
    :file "src/clj_orient/core.clj"}
   {:arglists ([orb out-stream] [orb]),
    :name "->output-stream",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L488",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L490",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/->output-stream",
    :doc
    "Writes an ORecordBytes object to the given output stream.\nIf no output stream is passed, a java.io.ByteArrayOutputStream will be created, written-to and returned.",
    :var-type "function",
-   :line 488,
+   :line 490,
    :file "src/clj_orient/core.clj"}
   {:arglists ([hook]),
    :name "add-hook!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L453",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L455",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/add-hook!",
    :doc "",
    :var-type "function",
-   :line 453,
+   :line 455,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass]),
    :name "browse-class",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L160",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L162",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/browse-class",
    :doc "Returns a seq of all the documents of the specified class.",
    :var-type "function",
-   :line 160,
+   :line 162,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kcluster]),
    :name "browse-cluster",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L162",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L164",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/browse-cluster",
    :doc "Returns a seq of all the documents in the specified cluster.",
    :var-type "function",
-   :line 162,
+   :line 164,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass]),
    :name "class-cluster-ids",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L360",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L362",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/class-cluster-ids",
    :doc "",
    :var-type "function",
-   :line 360,
+   :line 362,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass]),
    :name "class-indexes",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L359",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L361",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/class-indexes",
    :doc "",
    :var-type "function",
-   :line 359,
+   :line 361,
    :file "src/clj_orient/core.clj"}
   {:arglists ([odoc]),
    :name "class-name",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L389",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L391",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/class-name",
    :doc "Returns the classname (as a keyword) from an OClass.",
    :var-type "function",
-   :line 389,
+   :line 391,
    :file "src/clj_orient/core.clj"}
   {:arglists ([] [db]),
    :name "close-db!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L141",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L143",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/close-db!",
    :doc "Closes the DB at *db* and sets *db* to nil.",
    :var-type "function",
-   :line 141,
+   :line 143,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kname]),
    :name "cluster-id",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L170",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L172",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/cluster-id",
    :doc "",
    :var-type "function",
-   :line 170,
+   :line 172,
    :file "src/clj_orient/core.clj"}
   {:arglists ([id]),
    :name "cluster-name",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L169",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L171",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/cluster-name",
    :doc "",
    :var-type "function",
-   :line 169,
+   :line 171,
    :file "src/clj_orient/core.clj"}
   {:arglists ([]),
    :name "cluster-names",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L168",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L170",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/cluster-names",
    :doc "",
    :var-type "function",
-   :line 168,
+   :line 170,
    :file "src/clj_orient/core.clj"}
   {:arglists ([orid]),
    :name "cluster-pos",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L229",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L231",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/cluster-pos",
    :doc "Given an ORID, returns the Cluster Position",
    :var-type "function",
-   :line 229,
+   :line 231,
    :file "src/clj_orient/core.clj"}
   {:arglists ([clname]),
    :name "cluster-type",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L171",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L173",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/cluster-type",
    :doc "",
    :var-type "function",
-   :line 171,
+   :line 173,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass]),
    :name "count-class",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L165",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L167",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/count-class",
    :doc "",
    :var-type "function",
-   :line 165,
+   :line 167,
    :file "src/clj_orient/core.clj"}
   {:arglists ([id]),
    :name "count-cluster",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L166",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L168",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/count-cluster",
    :doc "",
    :var-type "function",
-   :line 166,
+   :line 168,
    :file "src/clj_orient/core.clj"}
   {:arglists
    ([kclass] [kclass ksuperclass-or-props] [kclass ksuperclass props]),
    :name "create-class!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L406",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L408",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/create-class!",
    :doc
    "Creates a class in the given database and makes it inherit the given superclass.",
    :var-type "function",
-   :line 406,
+   :line 408,
    :file "src/clj_orient/core.clj"}
   {:arglists ([db-location] [db-location user password]),
    :name "create-db!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L125",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L127",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/create-db!",
    :doc
    "Creates a new database either locally or remotely. It does not, however, return the open instance or bind *db*.",
    :var-type "function",
-   :line 125,
+   :line 127,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass pname ptype] [klass pname ptype conf]),
    :name "create-prop!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L330",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L332",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/create-prop!",
    :doc
    "When providing a type, it must be one of the following keywords:\n  #{:boolean :byte :short :integer :long :float :double :decimal :string\n    :date :datetime :binary :custom :transient\n    :embedded :embedded-list :embedded-map :embedded-set\n    :link :link-list :link-map :link-set}\nWhen using linked types #{:embedded, :link}, provide a vector of [link-type type]\n\nWhen providing a configuration hash-map, it must be in the format specified for update-prop!.",
    :var-type "function",
-   :line 330,
+   :line 332,
    :file "src/clj_orient/core.clj"}
   {:arglists ([] [db]),
    :name "db-closed?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L173",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L175",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/db-closed?",
    :doc "",
    :var-type "function",
-   :line 173,
+   :line 175,
    :file "src/clj_orient/core.clj"}
   {:arglists ([] [db]),
    :name "db-exists?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L181",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L183",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/db-exists?",
    :doc "",
    :var-type "function",
-   :line 181,
+   :line 183,
    :file "src/clj_orient/core.clj"}
   {:arglists ([] [db]),
    :name "db-info",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L187",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L189",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/db-info",
    :doc "Returns information relevant to the DB as a hash-map.",
    :var-type "function",
-   :line 187,
+   :line 189,
    :file "src/clj_orient/core.clj"}
   {:arglists ([] [db]),
    :name "db-open?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L178",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L180",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/db-open?",
    :doc "",
    :var-type "function",
-   :line 178,
+   :line 180,
    :file "src/clj_orient/core.clj"}
   {:arglists ([sym & triggers]),
    :name "defhook",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L456",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L458",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/defhook",
    :doc
    "Creates a new hook from the following fn definitions (each one is optional):\n  (before-create [~document] ~@body)\n  (before-read [~document] ~@body)\n  (before-update [~document] ~@body)\n  (before-delete [~document] ~@body)\n  (after-create [~document] ~@body)\n  (after-read [~document] ~@body)\n  (after-update [~document] ~@body)\n  (after-delete [~document] ~@body)\nExample:\n(defhook log-hook \"Optional doc-string.\"\n  (after-create [x] (println \"Created:\" x)))\n\nNotes: defhook only creates the hook. To add it to the current *db* use add-hook.\n       All passed records are first wrapped inside a CljODoc object for convenience.",
    :var-type "macro",
-   :line 456,
+   :line 458,
    :file "src/clj_orient/core.clj"}
   {:arglists ([x]),
    :name "delete!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L240",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L242",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/delete!",
    :doc
    "Deletes a document if it is passed or if its id (as ORID or vector) is passed.\nCan also remove a class from the DB Schema.",
    :var-type "function",
-   :line 240,
+   :line 242,
    :file "src/clj_orient/core.clj"}
   {:arglists ([] [db]),
    :name "delete-db!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L146",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L148",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/delete-db!",
    :doc "Deletes the database bound to *db* and sets *db* to nil.",
    :var-type "function",
-   :line 146,
+   :line 148,
    :file "src/clj_orient/core.clj"}
   {:arglists ([ksubclass ksuperclass]),
    :name "derive!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L395",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L397",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/derive!",
    :doc "Derives a class from another in the schema.",
    :var-type "function",
-   :line 395,
+   :line 397,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass] [kclass properties]),
    :name "document",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L209",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L211",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/document",
    :doc
    "Returns a newly created document given the document's class (as a keyword).\nIt can optionally take a Clojure hash-map to set the document's properties.",
    :var-type "function",
-   :line 209,
+   :line 211,
    :file "src/clj_orient/core.clj"}
   {:arglists ([x]),
    :name "document?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L205",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L207",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/document?",
    :doc "",
    :var-type "function",
-   :line 205,
+   :line 207,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass kname]),
    :name "drop-prop!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L364",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L366",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/drop-prop!",
    :doc "Removes a property from an OClass.",
    :var-type "function",
-   :line 364,
+   :line 366,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass]),
    :name "exists-class?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L425",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L427",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/exists-class?",
    :doc "",
    :var-type "function",
-   :line 425,
+   :line 427,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass prop]),
    :name "exists-prop?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L362",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L364",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/exists-prop?",
    :doc "",
    :var-type "function",
-   :line 362,
+   :line 364,
    :file "src/clj_orient/core.clj"}
   {:arglists ([prop klass]),
    :name "get-prop",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L302",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L304",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/get-prop",
    :doc "",
    :var-type "function",
-   :line 302,
+   :line 304,
    :file "src/clj_orient/core.clj"}
   {:arglists ([]),
    :name "hooks",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L452",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L454",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/hooks",
    :doc "",
    :var-type "function",
-   :line 452,
+   :line 454,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass props]),
    :name "indexed?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L370",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L372",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/indexed?",
    :doc
    "Tests whether the given props are indexed for the given oclass.",
    :var-type "function",
-   :line 370,
+   :line 372,
    :file "src/clj_orient/core.clj"}
   {:arglists ([orid]),
    :name "load",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L232",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L234",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/load",
    :doc
    "Returns a document (wrapped by CljODoc), given it's id (either as ORID or a vector (either [cluster-id item-id] or [:cluster item-id]))",
    :var-type "function",
-   :line 232,
+   :line 234,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass]),
    :name "oclass",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L381",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L383",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/oclass",
    :doc
    "Returns an OClass given the classname as a keyword.\nIf given an OClass, returns it inmediately.",
    :var-type "function",
-   :line 381,
+   :line 383,
    :file "src/clj_orient/core.clj"}
   {:arglists ([x]),
    :name "oclass?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L207",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L209",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/oclass?",
    :doc "",
    :var-type "function",
-   :line 207,
+   :line 209,
    :file "src/clj_orient/core.clj"}
   {:arglists ([]),
    :name "oclasses",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L392",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L394",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/oclasses",
    :doc "Returns a seq of all the OClass objects in the schema.",
    :var-type "function",
-   :line 392,
+   :line 394,
    :file "src/clj_orient/core.clj"}
   {:arglists ([db-loc user pass]),
    :name "open-document-db!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L138",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L140",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/open-document-db!",
    :doc "Opens and returns a new ODatabaseDocumentTx.",
    :var-type "function",
-   :line 138,
+   :line 140,
    :file "src/clj_orient/core.clj"}
   {:arglists ([ridvec]),
    :name "orid",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L223",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L225",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/orid",
    :doc "Transforms a vector into an ORecordId object.",
    :var-type "function",
-   :line 223,
+   :line 225,
    :file "src/clj_orient/core.clj"}
   {:arglists ([orid]),
    :name "orid->vec",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L226",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L228",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/orid->vec",
    :doc
    "Given an ORID, returns a vector [cluster-id, cluster-position].",
    :var-type "function",
-   :line 226,
+   :line 228,
    :file "src/clj_orient/core.clj"}
   {:arglists ([x]),
    :name "orid?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L206",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L208",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/orid?",
    :doc "",
    :var-type "function",
-   :line 206,
+   :line 208,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass prop]),
    :name "prop-info",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L348",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L350",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/prop-info",
    :doc
    "Returns a hash-map with detailed information about a class' property.",
    :var-type "function",
-   :line 348,
+   :line 350,
    :file "src/clj_orient/core.clj"}
   {:arglists ([klass]),
    :name "props",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L347",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L349",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/props",
    :doc "",
    :var-type "function",
-   :line 347,
+   :line 349,
    :file "src/clj_orient/core.clj"}
   {:arglists ([source]),
    :name "record-bytes",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L480",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L482",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/record-bytes",
    :doc
    "For creating ORecordBytes objects. The source can be either a byte array or an input stream.\nTo get the data out, use ->output-stream.",
    :var-type "function",
-   :line 480,
+   :line 482,
    :file "src/clj_orient/core.clj"}
   {:arglists ([hook]),
    :name "remove-hook!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L454",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L456",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/remove-hook!",
    :doc "",
    :var-type "function",
-   :line 454,
+   :line 456,
    :file "src/clj_orient/core.clj"}
   {:arglists ([item] [document kcluster]),
    :name "save!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L215",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L217",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/save!",
    :doc
    "Saves a document, an OClass or an object (for the Object Database).",
    :var-type "function",
-   :line 215,
+   :line 217,
    :file "src/clj_orient/core.clj"}
   {:arglists ([]),
    :name "save-schema!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L379",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L381",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/save-schema!",
    :doc "",
    :var-type "function",
-   :line 379,
+   :line 381,
    :file "src/clj_orient/core.clj"}
   {:arglists ([]),
    :name "schema",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L376",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L378",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/schema",
    :doc "Returns *db*'s OSchema.",
    :var-type "function",
-   :line 376,
+   :line 378,
    :file "src/clj_orient/core.clj"}
   {:arglists ([]),
    :name "schema-info",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L437",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L439",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/schema-info",
    :doc "",
    :var-type "function",
-   :line 437,
+   :line 439,
    :file "src/clj_orient/core.clj"}
   {:arglists ([db]),
    :name "set-db!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L132",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L134",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/set-db!",
    :doc "Sets *db*'s root binding to the given DB.",
    :var-type "function",
-   :line 132,
+   :line 134,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass]),
    :name "sub-classes",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L403",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L405",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/sub-classes",
    :doc
    "Returns a set of the names (as keywords) of subclasses for the given oclass.",
    :var-type "function",
-   :line 403,
+   :line 405,
    :file "src/clj_orient/core.clj"}
   {:arglists ([ksubclass ksuperclass]),
    :name "subclass?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L433",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L435",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/subclass?",
    :doc "",
    :var-type "function",
-   :line 433,
+   :line 435,
    :file "src/clj_orient/core.clj"}
   {:arglists ([ksuperclass ksubclass]),
    :name "superclass?",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L427",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L429",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/superclass?",
    :doc "",
    :var-type "function",
-   :line 427,
+   :line 429,
    :file "src/clj_orient/core.clj"}
   {:arglists ([kclass]),
    :name "truncate-class!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L435",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L437",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/truncate-class!",
    :doc "",
    :var-type "function",
-   :line 435,
+   :line 437,
    :file "src/clj_orient/core.clj"}
   {:arglists ([d]),
    :name "undo!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L251",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L253",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/undo!",
    :doc "Undoes local changes to documents.",
    :var-type "function",
-   :line 251,
+   :line 253,
    :file "src/clj_orient/core.clj"}
   {:arglists
    ([oprop
@@ -822,56 +822,56 @@
    :name "update-prop!",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L304",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L306",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/update-prop!",
    :doc
    "Updates an OProperty object.\n\nPlease note:\n  type must be one of the following keywords:\n    #{:boolean :byte :short :integer :long :float :double :decimal :string\n      :date :datetime :binary :custom :transient\n      :embedded :embedded-list :embedded-map :embedded-set\n      :link :link-list :link-map :link-set}\n  index must be one of the following keywords: #{:dictionary, :fulltext, :unique, :not-unique, :proxy}\n  If passed a 'false' value for index, the index is dropped.",
    :var-type "function",
-   :line 304,
+   :line 306,
    :file "src/clj_orient/core.clj"}
   {:arglists ([db & forms]),
    :name "with-db",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L152",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L154",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/with-db",
    :doc
    "Evaluates the given forms in an environment where *db* is bound to the given database.",
    :var-type "macro",
-   :line 152,
+   :line 154,
    :file "src/clj_orient/core.clj"}
   {:arglists ([& forms]),
    :name "with-tx",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L193",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L195",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/with-tx",
    :doc
    "Runs the following forms inside a transaction.\nIf an exception arrises, the transaction will fail inmediately and do an automatic rollback.\nThe exception will be rethrown so the programmer can catch it.",
    :var-type "macro",
-   :line 193,
+   :line 195,
    :file "src/clj_orient/core.clj"}
   {:arglists ([odoc]),
    :name "wrap-odoc",
    :namespace "clj-orient.core",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj#L89",
+   "http://github.com/eduardoejp/clj-orient/blob/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj#L91",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/core.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/51bda60b807f333fb393b531cdeac613b7fa4721/src/clj_orient/core.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.core-api.html#clj-orient.core/wrap-odoc",
    :doc "Wraps an ODocument object inside a CljODoc object.",
    :var-type "function",
-   :line 89,
+   :line 91,
    :file "src/clj_orient/core.clj"}
   {:arglists ([root-name vertex]),
    :name "add-root!",
@@ -1189,9 +1189,9 @@
    :name "->native-query",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L53",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L53",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/->native-query",
    :doc
@@ -1203,55 +1203,55 @@
    :name "clj-command!",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L367",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L368",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/clj-command!",
    :doc
    "Runs a SQL command against the database written as a Clojure map.",
    :var-type "function",
-   :line 367,
+   :line 368,
    :file "src/clj_orient/query.clj"}
   {:arglists ([query-map args]),
    :name "clj-query",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L361",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L362",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/clj-query",
    :doc
    "Does a SQL query against the database written as a Clojure map.",
    :var-type "function",
-   :line 361,
+   :line 362,
    :file "src/clj_orient/query.clj"}
   {:arglists ([query-map args]),
    :name "clj-query*",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L364",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L365",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/clj-query*",
    :doc
    "Same as clj-query, but transforms the map into a SQL string at compile time.",
    :var-type "macro",
-   :line 364,
+   :line 365,
    :file "src/clj_orient/query.clj"}
   {:arglists ([sym args & body]),
    :name "defsqlfn",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L152",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L152",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/defsqlfn",
    :doc
-   "Defines a new SQL function and installs it on the SQL engine.\nBesides the arguments passed to the function, it will also receive the hidden params *document* and *request*,\nof types ODocument and OCommandRequest respectively.\n\nIf the function does not access within it's body the hidden params *document* and *request*, a local (Clojure) version of the\nfunction will also be defined.",
+   "Defines a new SQL function and installs it on the SQL engine.\nBesides the arguments passed to the function, it will also receive the hidden params *document* and *requester*,\nof types ODocument and OCommandExecutor respectively.\n\nIf the function does not access within it's body the hidden params *document* and *requester*, a local (Clojure) version of the\nfunction will also be defined.",
    :var-type "macro",
    :line 152,
    :file "src/clj_orient/query.clj"}
@@ -1259,9 +1259,9 @@
    :name "install-sql-fns!",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L118",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L118",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/install-sql-fns!",
    :doc
@@ -1273,9 +1273,9 @@
    :name "native-query",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L82",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L82",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/native-query",
    :doc
@@ -1287,9 +1287,9 @@
    :name "sql-command!",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L149",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L149",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/sql-command!",
    :doc "Runs the given SQL command.",
@@ -1300,9 +1300,9 @@
    :name "sql-query",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L138",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L138",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/sql-query",
    :doc
@@ -1314,9 +1314,9 @@
    :name "traverse",
    :namespace "clj-orient.query",
    :source-url
-   "http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L99",
+   "http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L99",
    :raw-source-url
-   "http://github.com/eduardoejp/clj-orient/raw/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj",
+   "http://github.com/eduardoejp/clj-orient/raw/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj",
    :wiki-url
    "http://eduardoejp.github.com/clj-orient//clj-orient.query-api.html#clj-orient.query/traverse",
    :doc

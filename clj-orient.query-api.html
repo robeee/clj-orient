@@ -115,7 +115,7 @@ Available operators:
 When not provided a command, it works like :$= (.eq).</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L53" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L53" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -126,7 +126,7 @@ When not provided a command, it works like :$= (.eq).</pre>
   <pre id="var-docstr">Runs a SQL command against the database written as a Clojure map.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L367" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L368" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -137,7 +137,7 @@ When not provided a command, it works like :$= (.eq).</pre>
   <pre id="var-docstr">Does a SQL query against the database written as a Clojure map.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L361" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L362" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -148,7 +148,7 @@ When not provided a command, it works like :$= (.eq).</pre>
   <pre id="var-docstr">Same as clj-query, but transforms the map into a SQL string at compile time.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L364" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L365" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -157,14 +157,14 @@ When not provided a command, it works like :$= (.eq).</pre>
   <pre id="var-usage">Usage: (defsqlfn sym args &amp; body)
 </pre>
   <pre id="var-docstr">Defines a new SQL function and installs it on the SQL engine.
-Besides the arguments passed to the function, it will also receive the hidden params *document* and *request*,
-of types ODocument and OCommandRequest respectively.
+Besides the arguments passed to the function, it will also receive the hidden params *document* and *requester*,
+of types ODocument and OCommandExecutor respectively.
 
-If the function does not access within it's body the hidden params *document* and *request*, a local (Clojure) version of the
+If the function does not access within it's body the hidden params *document* and *requester*, a local (Clojure) version of the
 function will also be defined.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L152" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L152" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -175,7 +175,7 @@ function will also be defined.</pre>
   <pre id="var-docstr">Installs the previously defined SQL functions in the database.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L118" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L118" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -188,7 +188,7 @@ It takes either an ONativeSynchQuery object, a function or a hash-map.
 Returns results as a lazy-seq of CljODoc objects.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L82" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L82" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -199,7 +199,7 @@ Returns results as a lazy-seq of CljODoc objects.</pre>
   <pre id="var-docstr">Runs the given SQL command.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L149" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L149" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -212,7 +212,7 @@ When using positional parameters (?), use a vector.
 When using named parameters (:named), use a hash-map.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L138" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L138" id="var-source">Source</a>
 </div><div id="var-entry">
   <br />
   <hr />
@@ -228,7 +228,7 @@ pred = function that takes a CljODoc and a function that takes a keyword for acc
 Returns results as a lazy-seq of CljODoc objects.</pre>
   
   
-  <a href="http://github.com/eduardoejp/clj-orient/blob/046325afcf61e45f32cf5972ae5207bf4eba4a6f/src/clj_orient/query.clj#L99" id="var-source">Source</a>
+  <a href="http://github.com/eduardoejp/clj-orient/blob/6b58f049700b6b611e438713d2664005af91349f/src/clj_orient/query.clj#L99" id="var-source">Source</a>
 </div>
 
 
