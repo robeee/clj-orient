@@ -1,0 +1,1 @@
+([:dependencies [[org.clojure/clojure "1.4.0"] [com.orientechnologies/orient-commons "1.1.0"] [com.orientechnologies/orientdb-core "1.1.0"] [com.orientechnologies/orientdb-client "1.1.0"]]])
