@@ -1,4 +1,4 @@
-(defproject clj-orient "0.5.1-SNAPSHOT"
+(defproject org.clojars.michaelsbradleyjr/clj-orient "0.5.1-SNAPSHOT"
   :description "Wrapper for the OrientDB Native APIs. It supports version 1.1 of the APIs."
   :url "https://github.com/eduardoejp/clj-orient"
   :license {:name "Eclipse Public License - v 1.0"
