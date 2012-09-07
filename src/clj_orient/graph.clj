@@ -1,6 +1,6 @@
 ;; Copyright (C) 2011~2012, Eduardo Julián. All rights reserved.
 ;;
-;; The use and distribution terms for this software are covered by the 
+;; The use and distribution terms for this software are covered by the
 ;; Eclipse Public License 1.0
 ;; (http://opensource.org/licenses/eclipse-1.0.php) which can be found
 ;; in the file epl-v10.html at the root of this distribution.
@@ -14,7 +14,7 @@
       :doc "This namespace wraps the GraphDB part of OrientDB."}
   clj-orient.graph
   (:refer-clojure :exclude [load])
-  (:use clj-orient.core)
+  (:use [clj-orient.core :exclude [create-db!]])
   (:import (com.orientechnologies.orient.core.db.graph OGraphDatabase OGraphDatabasePool)
            clj_orient.core.CljODoc)
   (:require [clojure.walk :as walk]))
@@ -24,6 +24,11 @@
 ; Graph-DB fns
 (defopener open-graph-db! OGraphDatabasePool
   "Opens and returns a new OGraphDatabase.")
+
+(defn create-db!
+  "Creates a new database either locally. It does not, however, return the open instance or bind *db*."
+  ([db-location]
+   (-> (OGraphDatabase. db-location) .create) nil))
 
 (defn browse-vertices ""
   ([] (browse-vertices false))
@@ -90,7 +95,7 @@
 (defn get-links "Returns the set of edges between 2 vertices."
   ([v1 v2] (map #(CljODoc. %) (.getEdgesBetweenVertexes ^OGraphDatabase *db* (.-odoc v1) (.-odoc v2))))
   ([v1 v2 labels] (map #(CljODoc. %) (.getEdgesBetweenVertexes ^OGraphDatabase *db* (.-odoc v1) (.-odoc v2) (into-array String (map kw->oclass-name labels)))))
-  ([v1 v2 labels edge-types] (map #(CljODoc. %) 
+  ([v1 v2 labels edge-types] (map #(CljODoc. %)
                                   (.getEdgesBetweenVertexes ^OGraphDatabase *db*
                                     (.-odoc v1) (.-odoc v2)
                                     (into-array String (map kw->oclass-name labels))
