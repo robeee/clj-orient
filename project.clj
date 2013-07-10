@@ -8,11 +8,11 @@
   :plugins [[lein-autodoc "0.9.0"]
             [lein-swank "1.4.4"]
             [codox "0.6.1"]]
-  :dependencies [[org.clojure/clojure "1.4.0"]
-                 [com.orientechnologies/orient-commons "1.1.0"]
-                 [com.orientechnologies/orientdb-client "1.1.0"]
-                 [com.orientechnologies/orientdb-core "1.1.0"]
-                 [com.orientechnologies/orientdb-object "1.1.0"]
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [com.orientechnologies/orient-commons "1.4.1"]
+                 [com.orientechnologies/orientdb-client "1.4.1"]
+                 [com.orientechnologies/orientdb-core "1.4.1"]
+                 [com.orientechnologies/orientdb-object "1.4.1"]
                  ]
   :repositories {"sonatype" "https://oss.sonatype.org/content/groups/public/"}
   :autodoc {:name "clj-orient"
